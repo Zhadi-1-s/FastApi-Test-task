@@ -1,9 +1,12 @@
-from sqlalchemy import Column, Integer, String
-from app.database import Base
+from pydantic import BaseModel
 
-class CoinData(Base):
-    __tablename__ = "coin_data"
-    id = Column(Integer, primary_key=True, index=True)
-    name = Column(String, index=True)
-    symbol = Column(String, index=True)
-    price = Column(String, nullable=True)
+class CoinCreate(BaseModel):
+    name: str
+    symbol: str
+    price: str | None = None
+
+class Coin(CoinCreate):
+    id: int
+
+    class Config:
+        orm_mode = True
