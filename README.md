@@ -18,9 +18,9 @@ ReDoc: https://fastapi-test-task-v0-0-1.onrender.com/redoc
 3. Install Dependencies
    pip install -r requirements.txt
 
-4.Set Environment Variables Create a .env file in the project root with the following content
+4. Set Environment Variables Create a .env file in the project root with the following content
   
-  SECRET_KEY=your_jwt_secret_key
+   SECRET_KEY=your_jwt_secret_key
   
   ALGORITHM=HS256
   
