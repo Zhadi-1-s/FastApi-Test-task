@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from services.api_service import get_server_status, get_coin_data
+from app.services.api_service import get_server_status, get_coin_data
 
 router = APIRouter()
 
