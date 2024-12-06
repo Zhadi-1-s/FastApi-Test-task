@@ -19,10 +19,15 @@ ReDoc: https://fastapi-test-task-v0-0-1.onrender.com/redoc
    pip install -r requirements.txt
 
 4.Set Environment Variables Create a .env file in the project root with the following content
+  
   SECRET_KEY=your_jwt_secret_key
+  
   ALGORITHM=HS256
+  
   ACCESS_TOKEN_EXPIRE_MINUTES=30
+  
   DATABASE_URL=sqlite:///./test.db
+  
   EXTERNAL_API_URL=https://api.coingecko.com/api/v3
 
 5. Run Database Migrations
