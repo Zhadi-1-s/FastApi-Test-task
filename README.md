@@ -22,13 +22,13 @@ ReDoc: https://fastapi-test-task-v0-0-1.onrender.com/redoc
   
    SECRET_KEY=your_jwt_secret_key
   
-  ALGORITHM=HS256
+   ALGORITHM=HS256
   
-  ACCESS_TOKEN_EXPIRE_MINUTES=30
+   ACCESS_TOKEN_EXPIRE_MINUTES=30
   
-  DATABASE_URL=sqlite:///./test.db
+   DATABASE_URL=sqlite:///./test.db
   
-  EXTERNAL_API_URL=https://api.coingecko.com/api/v3
+   EXTERNAL_API_URL=https://api.coingecko.com/api/v3
 
 5. Run Database Migrations
    python -c "from app.database import init_db; init_db()"
